@@ -228,6 +228,7 @@ body * {
 .new-content__text{
 	width: 436px;
 	margin-top: 60px;
+	
 }
 .new-content__images{
 	width: 100%;
@@ -319,13 +320,17 @@ body * {
 
 .pricing__section .pricing{
 	width: 100%;
-	height: 507px;
+	height: 570px;
 	background-color: #F8FBFE;
 	background-size: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 0px;
-	text-align: ceneter;
+	margin-top: -50px;
+	text-align: center;
+}
+.pricing__instruction{
+	margin-left: 426px;
+	margin-right: 425px;
 }
 
 .pricing .pricing__title{
@@ -345,6 +350,34 @@ body * {
 	line-height: 32px;
 	text-align: center;
 	color: #323232;
+}
+
+.plan__button{
+	display: flex;
+	justify-content: center;
+	height: 46px;
+	max-width: 250px;
+	border: 1px solid #E8E8EA;
+	box-sizing: border-box;
+	border-radius: 23px;
+	background: #F8FBFE;
+	margin-top: 60px;
+}
+
+.plan__button-yearly{
+	border: 1px solid #E8E8EA;
+	background: #50E3C2;
+	border-radius: 23px;
+	padding: 6px 40px 4px 40px;
+	margin: 4px 4px 4px;
+	width: 126px;
+}
+
+.plan__button-monthly{
+	border: 1px solid #F8FBFE;
+	background: #F8FBFE;
+	border-radius: 23px;
+	width: 126px;
 }
 
 .plancard, .plancardPro{
@@ -412,7 +445,7 @@ body * {
 }
 
 .plancard__features-list .features-list__item{
-	margin: 0;
+	margin-left: -40px;
 	padding: 0;
 	list-style: none;
 }
@@ -508,7 +541,7 @@ body * {
 }
 
 .plancardPro__features-list .features-list__item{
-	margin: 0;
+	margin-left: -40px;
 	padding: 0;
 	list-style: none;
 }
@@ -547,15 +580,15 @@ body * {
 	color: #666666;
 }
 
-
-
 .brands{
-	padding-top: 114px;
+	display: flex;
+	margin-top: 494px;
+	margin-bottom: 120px;
 	text-align: center;
 	justify-content: center;
 }
 
-.brandas .brands__title{
+.brands .brands__title{
 	font-size: 16px;
 	line-height: 28px;
 	text-align: center;
@@ -571,6 +604,241 @@ body * {
 .brands-list .brands-list__item{
 	margin-bottom: 30px;
 }
+
+.rewies__list{
+	display: flex; 
+	height: 357px;
+	border: 1px solid #E8E8EA;
+}
+
+.rewies__list-cart{
+	margin-left: 46px;
+	margin-bottom: 48px;
+	width: 378px;
+}
+
+.rewies__list-cart:last-child{
+	margin-right: 44px;
+}
+
+.rewies__list-cart-quotas{
+	width: 38px;
+	height: 100px;
+	padding-top: 30px;
+}
+
+.rewies__list-cart-text{
+	margin-top: 0px;
+	Font-Family: Inter;
+	Font-Style: Regular;
+	Font-Size: 18px;
+	Line-Height: 32px;
+	Line-Height: 147%;
+	Vertical-Align: Top;
+	Letter-Spacing: -0.1px;
+	width: 274px;
+	height: 160px;
+}
+
+.rewies__list-cart-user{
+	display: flex;
+}
+
+.rewies__list-cart-user-avatar{
+	background-image: url(./images/cameron.png);
+	background-size: cover;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	margin-bottom: 53px;
+	margin-right: 21px;
+}
+
+.rewies__list-cart-user-avatar-ellen{
+	background-image: url(./images/ellen.png);
+	background-size: cover;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	margin-bottom: 53px;
+	margin-right: 21px;
+}
+
+.rewies__list-cart-user-avatar-cameron{
+	background-image: url(./images/cameron2.png);
+	background-size: cover;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	margin-bottom: 53px;
+	margin-right: 21px;
+}
+ 
+.managering{
+	display: flex;
+	width: 707px;
+	margin-top: 101px;
+	margin-bottom: 120px;
+	margin-left: 218px;
+	text-align: center;
+} 
+
+.managering__text{
+	margin-right: 61px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 50px;
+	letter-spacing: -0.221053px;
+	color: #000000;
+}
+
+.rewies__list-cart-user-data-name{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: -0.3px;
+	color: #323232;
+}
+.rewies__list-cart-user-data-info{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 28px;
+	letter-spacing: -0.3px;
+	color: #323232;
+	margin-bottom: 48px;
+}
+
+.rewies__list-cart-border-right{
+	border: 1px solid #E8E8EA;
+	margin-left: 55px;
+}
+
+.registration{
+	display: flex;
+	max-width: 558px;
+	height: 565px;
+}
+
+.registration-form{
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	border: 1px solid #E8E8EA;
+	box-sizing: border-box;
+	box-shadow: 0px 22px 54px rgba(67, 87, 138, 0.29);
+	border-radius: 10px;
+}
+
+.registration-title{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: -0.3px;
+	color: #000000;
+	margin-bottom: 30px;
+}
+
+.registration-form-input{
+	background: #FFFFFF;
+	border: 1px solid #E8E8EA;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding: 15px 228px 14px 16px;
+	margin-left: 51px;
+	margin-right: 51px;
+	margin-bottom: 20px;
+}
+
+.registration-form-input:first-child{
+	margin-top: 50px;
+}
+
+.registration-form-attach{
+	display: flex;
+}
+
+.registration-form-attach:last-child{
+	flex-wrap: wrap;
+}
+
+.registration-form-attach-input{
+	background: 80,227,194, 0.14;
+	mix-blend-mode: normal;
+	border: 1px solid #EFEFEFFF;
+	border-radius: 3px;
+	height: 50px;
+	width: 458px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #0F3D33;
+}
+
+.registration-form-attach-full{
+	display: flex;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 50px;
+	align-items: center;
+	letter-spacing: -0.3px;
+	color: #323232;
+	margin-left: 50px;
+}
+
+.registration-form-attach-text{
+	width: 220px;
+	height: 21px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 50px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.3px;
+	color: #323232;
+}
+
+.registration-form-attach-button-input{
+	width: 129px;
+	height: 35px;
+}
+
+.registration-form-attach-block{
+	width: 129px;
+	height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 600px) {
 	
@@ -677,7 +945,6 @@ body * {
 	.plan{
 	display: flex;
 	justify-content: center;
-
 }
 
 @media screen and (min-width: 1201px) {
