@@ -874,9 +874,29 @@ body * {
 	opacity: 0;
 }
 
+.footer{
+	margin-top: 120px;
+	background-color: #202E4DFF;
+}
 
+.footer-content{
+	
+}
 
+.footer__content-group{
+	display: flex;
+	justify-content: space-between;
+}
 
+.footer__content-social{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__content-social-madness{
+	display: flex;
+	justify-content: space-between;
+}
 
 
 
