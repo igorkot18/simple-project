@@ -389,11 +389,15 @@ body * {
 
 .plancard{
 	margin-right: 30px;
+	margin-top: 52px;
 }
 
 .plancardPro{
 	margin-right: 0px;
 	margin-left: 0px;
+	margin-top: 45px;
+	border-top: 6px solid #50E3C2;
+	border-radius: 6px;
 }
 
 .plancard .plancard__name{
@@ -800,6 +804,9 @@ body * {
 	letter-spacing: -0.3px;
 	color: #323232;
 	margin-left: 50px;
+	width: 459px;
+	height: 35px;
+	position: relative;
 }
 
 .registration-form-attach-text{
@@ -814,20 +821,58 @@ body * {
 	align-items: center;
 	letter-spacing: -0.3px;
 	color: #323232;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.registration-form-attach-block{
+	display: flex;
+
+	width: 129px;
+	height: 35px;
+	margin-left: 110px;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	background-color: #F2F5F8;
+	border-radius: 3px;
+}
+
+.registration-form-attach-block-text{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 50px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.3px;
+	color: #323232;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.registration-form-attach-block-image{
+	width: 13px;
+	height: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 10px 8px 10px 12px;
 }
 
 .registration-form-attach-button-input{
-	width: 129px;
+	position: absolute;
+	width: 119px;
 	height: 35px;
+	left: 335px;
+	top: 6px;
+	opacity: 0;
 }
-
-.registration-form-attach-block{
-	width: 129px;
-	height: 35px;
-}
-
-
-
 
 
 
