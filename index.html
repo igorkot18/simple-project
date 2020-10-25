@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>DZ 5</title>
+		<title>Simple-project</title>
 
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="mainadaptive.css">
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/png">
 	</head>
 	<body>
 		<header class="header">
@@ -26,7 +28,7 @@
 				<p class="banner__subtitle">
 					Create custom landing pages with Berlin that convert more visitors than any website.
 				</p>
-				<a class="banner__button button" href="">
+				<a class="banner__button button" href="#formWay">
 					Start free 14 days trial
 				</a>
 				<span class="banner__tooltip">
@@ -35,7 +37,7 @@
 			</div>
 		</div>
 
-		<div class="features">
+		<div class="features container">
 			<div class="features__content container">
 				<div class="feature-column feature-column--red">
 					<div class="feature-column__point"></div>
@@ -65,9 +67,9 @@
 			<div class="new-content container">
 				<div class="new-content__images"><img src="./images/price1.png" class="price"><img src="./images/stat.png" class="stat"></div>
 				<div class="new-content__text">
-				<h2>Manage everything faster in single place.</h2>
-				<p>Create custom landing pages with Berlin that convert more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
-				<a class="banner__button button">Start free 14 days trial</a>
+					<h2 class="new-content__title">Manage everything faster in single place.</h2>
+					<p class="new-content__info">Create custom landing pages with Berlin that convert more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
+					<a class="banner__button button" href="#formWay">Start free 14 days trial</a>
 				</div>
 			</div>
 		</div>
@@ -76,26 +78,29 @@
 			<div class="new-content container">
 				<div class="new-content__images"><img src="./images/upload.png" class="upload"><img src="./images/act.png" class="act"></div>
 				<div class="new-content__text">
-				<h2>Build better team work faster and better!</h2>
-				<p>Create custom landing pages with Berlin that convert more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
-				<a class="banner__button button">Start free 14 days trial</a>
+				<h2 class="new-content__title">Build better team work faster and better!</h2>
+				<p class="new-content__info">Create custom landing pages with Berlin that convert more visitors than any website. With lots of unique blocks, you can easily build a page without coding.</p>
+				<a class="banner__button button" href="#formWay">Start free 14 days trial</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="videoblock">
+			<video poster="./images/video_poster.jpg" class="video">
+				<source src="./videos/video.mp4">
+			</video>	
 			<div class="videoblock__content container">
-			<button class="videoblock__button"></button>
-			<h2 class="videoblock__title">We help you to be successful</h2>
-			<p class="videoblock__subtitle">Wireframes are generally created by business analysts, user experience designers, developers, visual designers, and by those with expertise</p>
+				<button class="videoblock__button"></button>
+				<h2 class="videoblock__title">We help you to be successful</h2>
+				<p class="videoblock__subtitle">Wireframes are generally created by business analysts, user experience designers, developers, visual designers, and by those with expertise</p>
 			</div>
 		</div>
 		
 		<div class="pricing__section">
 			<div class="pricing container">
 				<div class="pricing__instruction">
-					<h2 class="pricing__title">Choose a plan to start</h2>
-					<p class="pricing__subtitle">Wireframes are generally created by business analysts, user experience designers, developers, visual designers, and by those with expertise</p>
+					<h2 class="pricing__title container">Choose a plan to start</h2>
+					<p class="pricing__subtitle container">Wireframes are generally created by business analysts, user experience designers, developers, visual designers, and by those with expertise</p>
 				</div>
 				<div class="plan__button container">
 						<button class="plan__button-monthly"> Monthly </button>
@@ -112,7 +117,7 @@
 						<li class="features-list__item features-list__item--stroked">Custom Domain Names</li>
 						<li class="features-list__item features-list__item--stroked">Unlimited Emails</li>
 					</ul>
-					<a class="plancard__button button" href="">Start free 14 days trial</a>
+					<a class="plancard__button button" href="#formWay">Start free 14 days trial</a>
 					<p class="tooltip">No credit card required</p>
 					</div>
 						
@@ -126,7 +131,7 @@
 						<li class="features-list__item features-list__item">Custom Domain Names</li>
 						<li class="features-list__item features-list__item">Unlimited Emails</li>
 					</ul>
-					<a class="plancardPro__button button" href="">Start free 14 days trial</a>
+					<a class="plancardPro__button button" href="#formWay">Start free 14 days trial</a>
 					<p class="tooltip">No credit card required</p>
 					</div>
 				</div>
@@ -204,13 +209,14 @@
 			<div class="container">
 				<div class="managering">
 					<div class="managering__text">Manage your team in one place</div>
-					<a class="managering__button button" href="">Start free 14 days trial</a>
+					<a class="managering__button button" href="#formWay">Start free 14 days trial</a>
 				</div>
 			</div>
 		</div>
 		
+	<div class="registration-background-color">	
 		<div class="registration container">
-			<div class="registration-content">
+			<div class="registration-content" id="formWay">
 				<div class="registration-title">Please leave your request</div>
 				<form action="" class="registration-form">
 					<input class="registration-form-input" type="name" placeholder="First name">
@@ -232,55 +238,57 @@
 					</div>		
 					<input type="submit" class="registration-form-attach-input" value="Send">
 				</div>
+				</form>
 			</div>
 		</div>
+	</div>	
 
 	<footer class="footer">
 		<div class="footer__content container">
 			<div class="footer__content-group">
 				<div class="footer__content-group-store">
 					<div class="footer__content-group-store-store"> Store </div>
-					<div class="footer__content-group-store-catalog"> Catalog </div>
-					<div class="footer__content-group-store-popular"> Popular </div>
-					<div class="footer__content-group-store-features"> Features </div>
-					<div class="footer__content-group-store-f.a.q."> F.a.q. </div>
+					<a href="#" class="footer__content-group-store-catalog href"> Catalog </a>
+					<a href="#" class="footer__content-group-store-popular href"> Popular </a>
+					<a href="#" class="footer__content-group-store-features href"> Features </a>
+					<a href="#" class="footer__content-group-store-f.a.q. href"> F.a.q. </a>
 				</div>		
 				<div class="footer__content-group-about">
 					<div class="footer__content-group-about-about"> About </div>
-					<div class="footer__content-group-about-catalog"> Catalog </div>
-					<div class="footer__content-group-about-popular"> Popular </div>
-					<div class="footer__content-group-about-features"> Features </div>
+					<a href="#" class="footer__content-group-about-catalog href"> Catalog </a>
+					<a href="#" class="footer__content-group-about-popular href"> Popular </a>
+					<a href="#" class="footer__content-group-about-features href"> Features </a>
 				</div>
 				<div class="footer__content-group-policy">
 					<div class="footer__content-group-policy-policy"> Policy </div>
-					<div class="footer__content-group-policy-catalog"> Catalog </div>
-					<div class="footer__content-group-policy-popular"> Popular </div>
-					<div class="footer__content-group-policy-features"> Features </div>
+					<a href="#" class="footer__content-group-policy-catalog href"> Catalog </a>
+					<a href="#" class="footer__content-group-policy-popular href"> Popular </a>
+					<a href="#" class="footer__content-group-policy-features href"> Features </a>
 				</div>
 				<div class="footer__content-group-team">
 					<div class="footer__content-group-team-team"> Team </div>
-					<div class="footer__content-group-team-catalog"> Catalog </div>
-					<div class="footer__content-group-team-popular"> Popular </div>
-					<div class="footer__content-group-team-features"> Features </div>
+					<a href="#" class="footer__content-group-team-catalog href"> Catalog </a>
+					<a href="#" class="footer__content-group-team-popular href"> Popular </a>
+					<a href="#" class="footer__content-group-team-features href"> Features </a>
 				</div>
 				<div class="footer__content-group-support">
 					<div class="footer__content-group-support-support"> Support </div>
-					<div class="footer__content-group-support-catalog"> Catalog </div>
-					<div class="footer__content-group-support-popular"> Popular </div>
-					<div class="footer__content-group-support-features"> Features </div>
+					<a href="#" class="footer__content-group-support-catalog href"> Catalog </a>
+					<a href="#" class="footer__content-group-support-popular href"> Popular </a>
+					<a href="#" class="footer__content-group-support-features href"> Features </a>
 				</div>
 			</div>
 			<div class="footer__content-social">
-				<div class="footer__content-social-reserved"> © 2019 Grayic. All rights reserved </div>
+				<a href="#" class="footer__content-social-reserved exile"> © 2019 Grayic. All rights reserved </a>
 				<div class="footer__content-social-madness">
-					<div class="footer__content-social-madness-privacy"> Privacy Policy </div>
-					<div class="footer__content-social-madness-terms"> Terms & Conditions </div>
-					<div class="footer__content-social-madness-sitemap"> Site map </div>	
+					<a href="#" class="footer__content-social-madness-privacy exile"> Privacy Policy </a>
+					<a href="#" class="footer__content-social-madness-terms exile"> Terms & Conditions </a>
+					<a href="#" class="footer__content-social-madness-sitemap exile"> Site map </a>	
 				</div>	
 				<div class="footer__content-social-app">
-					<div class="footer__content-social-app-twitter"></div>
-					<div class="footer__content-social-app-facebook"></div>
-					<div class="footer__content-social-app-google"></div>
+					<a href="#" class="footer__content-social-app-twitter"> <img src="./images/twitter.png" class="footer__images"> </a>
+					<a href="#" class="footer__content-social-app-facebook"> <img src="./images/facebook.png" class="footer__images"> </a>
+					<a href="#" class="footer__content-social-app-google"> <img src="./images/google.png" class="footer__images"> </a>
 				</div>	
 			</div>	
 		</div>	
