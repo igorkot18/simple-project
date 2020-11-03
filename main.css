@@ -41,9 +41,15 @@ body * {
 .header .header__logo {
 	width: 95px;
 }
+.header__nav{
+	display: flex;
+	justify-content: space-between;
+	width: 255px;
+	height: 24px;
+}
 
 .header .header__nav a {
-	margin-right: 20px;
+	margin-right: 0px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #DBE4F1;
@@ -368,17 +374,17 @@ body * {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: -50px;
-	text-align: center;
+	text-align: left;
 }
 .pricing__instruction{
-	margin-left: 426px;
-	margin-right: 425px;
+	/*margin-left: 426px;
+	margin-right: 425px;*/
 }
 
 .pricing .pricing__title{
 	display: flex;
 	justify-content: center;
-	width: 402px;
+/*	width: 402px;*/
 	font-weight: bold;
 	font-size: 38px;
 	line-height: 50px;
@@ -415,35 +421,56 @@ body * {
 	background: #50E3C2;
 	border-radius: 23px;
 	padding: 6px 40px 4px 40px;
-	margin: 4px 4px 4px;
-	width: 126px;
+	margin: 4px 0px 4px 7px;
+	width: 125px;
 }
 
 .plan__button-monthly{
 	border: 1px solid #F8FBFE;
 	background: #F8FBFE;
 	border-radius: 23px;
-	width: 126px;
+	padding: 6px 33px 4px 33px;
+	margin: 4px 0px 4px 0px;
+	width: 125px;
 }
 
 .plancard, .plancardPro{
-	padding-top: 28px;
-	padding-right: 77px;
+	padding-top: 0px;
+	padding-right: 0px;
 	padding-bottom: 29px;
-	padding-left: 44px;
+	padding-left: 0px;
+	background-color: white;
 }
 
 .plancard{
 	margin-right: 30px;
-	margin-top: 52px;
+	margin-top: 45px;
 }
 
 .plancardPro{
 	margin-right: 0px;
 	margin-left: 0px;
 	margin-top: 45px;
-	border-top: 6px solid #50E3C2;
+	/*border-top: 6px solid #50E3C2;
+	border-radius: 6px;*/
+}
+
+.plancardPro__activeCard{
+	height: 4px;
+	width: 350px;
+	left: 0px;
+	top: 0px;
 	border-radius: 6px;
+	background-color: #50E3C2;
+}
+
+.plancard__activeCard{
+	height: 4px;
+	width: 350px;
+	left: 0px;
+	top: 0px;
+	border-radius: 6px;
+/*	background-color: #50E3C2;*/
 }
 
 .plancard .plancard__name{
@@ -453,12 +480,14 @@ body * {
 	letter-spacing: 0.433333px;
 	text-transform: uppercase;
 	color: #878B90;
+	margin: 28px 263px 17px 45px;
 }
 
 .plancard .plancard__price{
 	font-weight: bold;
 	letter-spacing: -0.3px;
 	color: #000000;
+	margin: 0px 168px 5px 45px;
 }
 
 .plancard  .plancard__price .dollar{
@@ -492,6 +521,11 @@ body * {
 	letter-spacing: -0.4px;
 	color: #323232;
 	width: 229px;
+	margin: 0px 77px 26px 44px;
+}
+
+.plancard__features-list{
+	margin: 0px 87px 31px 48px;
 }
 
 .plancard__features-list .features-list__item{
@@ -533,12 +567,17 @@ body * {
 	background-repeat: no-repeat;
 }
 
+.plancard__button{
+	margin: 0px 79px 14px 44px;
+}
+
 .plancard .tooltip{
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 28px;
 	letter-spacing: -0.4px;
 	color: #666666;
+	margin: 0px 160px 20px 45px;
 }
  
 
@@ -549,12 +588,14 @@ body * {
 	letter-spacing: 0.433333px;
 	text-transform: uppercase;
 	color: #878B90;
+	margin: 28px 77px 17px 45px;
 }
 
 .plancardPro .plancardPro__price{
 	font-weight: bold;
 	letter-spacing: -0.3px;
 	color: #000000;
+	margin: 0px 157px 5px 45px;
 }
 
 .plancardPro  .plancardPro__price .dollar{
@@ -588,6 +629,11 @@ body * {
 	letter-spacing: -0.4px;
 	color: #323232;
 	width: 229px;
+	margin: 0px 77px 26px 44px;
+}
+
+.plancardPro__features-list{
+	margin: 0px 87px 31px 48px;
 }
 
 .plancardPro__features-list .features-list__item{
@@ -621,6 +667,10 @@ body * {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.plancardPro__button{
+	margin: 0px 79px 15px 44px;
+}
+
 
 .plancardPro .tooltip{
 	font-weight: normal;
@@ -628,6 +678,7 @@ body * {
 	line-height: 28px;
 	letter-spacing: -0.4px;
 	color: #666666;
+	margin: 0px 157px 28px 48px;
 }
 
 .brands{
@@ -1014,7 +1065,7 @@ body * {
 .footer__content-social-reserved{
 	margin-right: 198px;
 	margin-left: 0px;
-	padding-right: 45px;
+	padding-right: 0px;
 }
 
 .footer__content-social-madness{
