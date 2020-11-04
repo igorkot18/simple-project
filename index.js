@@ -8,7 +8,7 @@ window.addEventListener('scroll', function(e) {
 
 const videoPlayButton = document.querySelector('videoblock__button');
 
-window.addEventListener('click', function(e) {
+videoPlay.addEventListener('click', function(e) {
 	document.querySelector('.video__poster').style.display = 'none';
 	document.querySelector('.videoblock__content').style.display = 'none';
 	document.querySelector('.video').play();
