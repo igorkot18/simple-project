@@ -486,6 +486,15 @@ body * {
 	left: 0px;
 	top: 0px;
 	border-radius: 6px;
+	background-color: white;
+}
+
+.plancard__activeCard{
+	height: 4px;
+	width: 350px;
+	left: 0px;
+	top: 0px;
+	border-radius: 6px;
 /*	background-color: #50E3C2;*/
 }
 
