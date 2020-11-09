@@ -61,45 +61,41 @@ videoPlay.addEventListener('click', function(e) {
 // lessonArrays();
 
  // Смена активной кнопки
-const planButtons = document.querySelectorAll('plan__button');
-for (let i = 0; i < planButtons.length; i++) {
-	planButtons[i].addEventListener('click', function(e) {
-		console.log(e);
-		console.log('this', this);
-	});
-for (let j = 0; j < planButtons.length; j++) {
-	planButtons[j].classList.remove('toggle-active');
-	this.classList.add('toggle-active');
-	const choosedPlan = e.target.getAttribute('data-target');
-
-	const offerBlock = document.querySelector({choosedPlan});
-	offerBlock.classList.add('planButtonMonth');
-	console.log('offerBlock', offerBlock);
-	}
-};
 
 
-
-
-
-
-const cardCheckButton = document.querySelector('plan__button');
 planButtonMonth.addEventListener('click', function(e) {
-	document.querySelector('.plan__button-monthly').style.background = '#50E3C2';
-	document.querySelector('.plan__button-yearly').style.background = 'white';
-	document.querySelector('.plancard__activeCard').style.background = '#50E3C2';
-	document.querySelector('.plancardPro__activeCard').style.background = 'white';
-	document.querySelector('.plan__button-monthly').style.outline = 'none';
-	document.querySelector('.plan__button-yearly').style.outline = 'none';
+	const container = document.getElementsByClassName('pricing')[0];
+		container.className = container.className.replace('right', '').trim()
 });
 
-const cardCheckButtonButton = document.querySelector('plan__button');
+
 planButtonYear.addEventListener('click', function(e) {
-	document.querySelector('.plan__button-monthly').style.background = 'white';
-	document.querySelector('.plan__button-yearly').style.background = '#50E3C2';
-	document.querySelector('.plancard__activeCard').style.background = 'white';
-	document.querySelector('.plancardPro__activeCard').style.background = '#50E3C2';
+	const container = document.getElementsByClassName('pricing')[0];
+		container.className = `${container.className.replace('right', '').trim()} right`
 });
+
+
+
+
+
+
+// const cardCheckButton = document.querySelector('plan__button');
+// planButtonMonth.addEventListener('click', function(e) {
+// 	document.querySelector('.plan__button-monthly').style.background = '#50E3C2';
+// 	document.querySelector('.plan__button-yearly').style.background = 'white';
+// 	document.querySelector('.plancard__activeCard').style.background = '#50E3C2';
+// 	document.querySelector('.plancardPro__activeCard').style.background = 'white';
+// 	document.querySelector('.plan__button-monthly').style.outline = 'none';
+// 	document.querySelector('.plan__button-yearly').style.outline = 'none';
+// });
+
+// const cardCheckButtonButton = document.querySelector('plan__button');
+// planButtonYear.addEventListener('click', function(e) {
+// 	document.querySelector('.plan__button-monthly').style.background = 'white';
+// 	document.querySelector('.plan__button-yearly').style.background = '#50E3C2';
+// 	document.querySelector('.plancard__activeCard').style.background = 'white';
+// 	document.querySelector('.plancardPro__activeCard').style.background = '#50E3C2';
+// });
 
 
 
@@ -109,7 +105,7 @@ planButtonYear.addEventListener('click', function(e) {
 
 
 let allCurrency;
-fetch('https://developerhub.alfabank.by:8273/partner/1.0.0/public/rates')
+fetch('https://developerhub.alfabank.by:8273/partner/1.0.0/public/nationalRates')
 	.then(response => response.json())
 	.then(currencyExchange => {
 		allCurrency = currencyExchange

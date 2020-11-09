@@ -1,4 +1,3 @@
-
 html {
 	overflow-x: hidden;
 }
@@ -386,16 +385,39 @@ body * {
 .pricing__section{
 	margin-bottom: 0px;
 }
+
 .pricing__section .pricing{
 	width: 100vw;
 	height: 570px;
 	background-color: #F8FBFE;
+
 	background-size: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: -50px;
 	text-align: left;
 }
+
+
+.pricing__section .right .plan__button-monthly {
+	border: 1px solid #E8E8EA;
+	background: #F8FBFE;
+}
+
+.pricing__section .right .plan__button-yearly {
+	border: 1px solid #F8FBFE;
+	background: #50E3C2;
+}
+
+
+.pricing__section .right .plan .plancard .plancard__activeCard{
+	background-color: white;
+}
+
+.pricing__section .right .plan .plancardPro .plancardPro__activeCard{
+	background-color: #50E3C2;
+}
+
 .pricing__instruction{
 	/*margin-left: 426px;
 	margin-right: 425px;*/
@@ -438,20 +460,22 @@ body * {
 
 .plan__button-yearly{
 	border: 1px solid #E8E8EA;
-	background: #50E3C2;
+	background: #F8FBFE;
 	border-radius: 23px;
 	padding: 6px 40px 4px 40px;
 	margin: 4px 0px 4px 7px;
 	width: 125px;
+	outline: none;
 }
 
 .plan__button-monthly{
 	border: 1px solid #F8FBFE;
-	background: #F8FBFE;
+	background: #50E3C2;
 	border-radius: 23px;
 	padding: 6px 33px 4px 33px;
 	margin: 4px 0px 4px 0px;
 	width: 125px;
+	outline: none;
 }
 
 .plancard, .plancardPro{
@@ -481,7 +505,7 @@ body * {
 	left: 0px;
 	top: 0px;
 	border-radius: 6px;
-	background-color: #50E3C2;
+	background-color: white;
 }
 
 .plancard__activeCard{
@@ -490,7 +514,7 @@ body * {
 	left: 0px;
 	top: 0px;
 	border-radius: 6px;
-	background-color: white;
+	background-color: #50E3C2;
 }
 
 .plancard__activeCard{
@@ -1106,8 +1130,6 @@ body * {
 	padding-right: 18px;
 }
 
-
-
 @media screen and (min-width: 768px) {
 	
 	.banner .banner__content {
@@ -1310,12 +1332,3 @@ body * {
 		width: 1155px;
 	}
 }
-
-
-
-
-
-
-
-
-
